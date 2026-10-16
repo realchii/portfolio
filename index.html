@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kian Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header id="home" class="homePage">
+    <h1>Hello, I'm Kian<br>This is my Portfolio.</h1>
+    <a class="btnOutline" href="#projects">View my work</a>
+  </header>
+
+  <nav class="nav" aria-label="Main navigation">
+    <button type="button" class="lightSwitch" id="lightSwitch" aria-label="Switch to light mode">Light mode</button>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about" class="section">
+      <h2 class="sectionTitle">About</h2>
+      <div class="about">
+        <div class="aboutMe">
+          <div class="avatar"><img src="imgs/me.jpg" alt="Kian"></div>
+          <p>I'm a Computer Science student at HAU, building my skills in Python, Java, HTML, and CSS.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill">
+            <img src="imgs/Python.webp" alt="">
+            <span>PYTHON</span>
+          </div>
+          <div class="skill">
+            <img src="imgs/Java.png" alt="">
+            <span>JAVA</span>
+          </div>
+          <div class="skill">
+            <img src="imgs/CSS.png" alt="">
+            <span>CSS</span>
+          </div>
+          <div class="skill">
+            <img src="imgs/HTML.png" alt="">
+            <span>HTML</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="sectionTitle">Projects</h2>
+      <article class="project">
+        <div class="projectImage">
+          <div class="projectImageInner"></div>
+        </div>
+        <div class="projects">
+          <h3>Projects</h3>
+          <p>Project description goes here.</p>
+          <a class="linkUnderline" href="#">Live App</a>
+          <a class="linkUnderline" href="#">Learn More</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="sectionTitle">Contact</h2>
+      <form class="cForm" action="#" method="post">
+        <p>Have a question or want to get in touch? Send me a message.</p>
+        <input type="text" name="name" placeholder="Name" aria-label="Name" required>
+        <input type="email" name="email" placeholder="Email" aria-label="Email" required>
+        <textarea name="message" placeholder="Message" aria-label="Message" rows="5" required></textarea>
+        <button type="submit" class="linkUnderline">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>&copy; Kian</small>
+  </footer>
+
+</body>
+
+</html>
